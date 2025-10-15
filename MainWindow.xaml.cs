@@ -85,7 +85,7 @@ namespace Calculator
                 {
                     try
                     {
-                        var result = new System.Data.DataTable().Compute(Display.Text, null);
+                        var result = MyStuff.CalcParser.ParseTwo(Display.Text);
                         Display.Text = result.ToString();
                     }
                     catch
